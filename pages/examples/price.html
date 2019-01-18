@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>天津Hotspot</title>
+
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+  <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
+
+  <link rel="stylesheet" href="../../dist/css/AdminLTE.min.css">
+
+  <link rel="stylesheet" href="../../dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="../../dist/bootstrapV4/css/bootstrap.css">
+  <link rel="stylesheet" href="../../dist/css/header.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <script src="../../dist/js/price.js"></script>
+
+
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+  <div class="wrapper">
+
+    <header class="main-header">
+      <!-- Logo -->
+      <a href="../../index2.html" class="logo">
+        <!-- mini logo for sidebar mini 50x50 pixels -->
+        <span class="logo-mini"><b>A</b>LT</span>
+        <!-- logo for regular state and mobile devices -->
+        <span class="logo-lg"><b>天津</b>Hotspot</span>
+      </a>
+
+    </header>
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar">
+      <!-- sidebar: style can be found in sidebar.less -->
+      <section class="sidebar">
+        <!-- Sidebar user panel -->
+        <div class="user-panel">
+          <div class="pull-left image">
+            <img src="../../dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+          </div>
+          <div class="pull-left info">
+            <p>阿斯顿撒大所</p>
+            <a href="./profile.html"><i class="fa fa-circle text-success"></i> 在线</a>
+          </div>
+        </div>
+        <!-- search form -->
+        <form action="#" method="get" class="sidebar-form">
+          <div class="input-group">
+            <input type="text" name="q" class="form-control" placeholder="搜索...">
+            <span class="input-group-btn">
+              <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+              </button>
+            </span>
+          </div>
+        </form>
+        <!-- /.search form -->
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu" data-widget="tree">
+          <li class="header">主要导航</li>
+
+          <li class="treeview">
+              <a href="#">
+                <i class="fa fa-child">
+                </i>
+                <span>个人</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="price.html"><i class="fa fa-circle-o"></i> 订购套餐</a></li>
+                <li><a href="profile.html"><i class="fa fa-circle-o"></i> 个人详情</a></li>
+                <li><a href="login.html"><i class="fa fa-circle-o"></i> 登录</a></li>
+                <li><a href="register.html"><i class="fa fa-circle-o"></i> 注销</a></li>
+              </ul>
+            </li>
+
+
+
+        </ul>
+      </section>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <h1 class="display-4">套餐选择</h1>
+        <p class="lead">选择适合您的套餐,开启您的天津Hotspot之旅</p>
+        <div class="card-deck mb-3 text-center">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">个人版</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">¥0 <small class="text-muted">/月</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>10个热点</li>
+                <li>2 GB流量</li>
+                <li>热点切换</li>
+                <li>客服</li>
+              </ul>
+              <button type="button" class="btn btn-lg btn-block btn-outline-primary" onclick="gotoRegiBtn_Clicked()">免费注册</button>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">个人高级版</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">¥50 <small class="text-muted">/月</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>20个热点</li>
+                <li>10 GB流量</li>
+                <li>支持私有节点</li>
+                <li>私人客服</li>
+              </ul>
+              <button type="button" class="btn btn-lg btn-block btn-primary" onclick="gotoPayBtn_Clicked()">立刻下单</button>
+            </div>
+          </div>
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">企业版</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">¥200 <small class="text-muted">/ 月</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>100 个节点</li>
+                <li>1 TB流量</li>
+                <li>支持千兆企业级节点</li>
+                <li>高级私人客服</li>
+              </ul>
+              <button type="button" class="btn btn-lg btn-block btn-primary" onclick="gotoPayBtn_Clicked()">立刻下单</button>
+            </div>
+          </div>
+        </div>
+
+      </div>        <footer class="card-footer text-muted" style="text-align: center">
+          <strong>© 2019 天津Hotspot Made with Love❤ by Group 1 _HP(TianJin)</strong>
+        </footer>
+    </div>
+  </div>
+  <!-- /.content-wrapper -->
+
+
+
+
+
+        </ul>
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery 3 -->
+  <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap 3.3.7 -->
+  <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- FastClick -->
+  <script src="../../bower_components/fastclick/lib/fastclick.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../../dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="../../dist/js/demo.js"></script>
+</body>
+
+</html>

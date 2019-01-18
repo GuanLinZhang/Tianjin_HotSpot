@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../dist/bootstrapV4/css/bootstrap.css">
+  <link rel="stylesheet" href="../../dist/css/subSuccess.css">
+
+  <title>Document</title>
+</head>
+<body>
+  <div class="alert alert-success" role="alert" id="notify_container"> 
+    <a href="profile.html" class="alert-link" id="showtimes">10s后倒计时,点击后直接跳转</a>
+  </div>
+</body>
+<script type="text/javascript">  
+  //设定倒数秒数  
+  var t = 11;  
+  //显示倒数秒数  
+  function showTime(){  
+      t -= 1;  
+      document.getElementById('showtimes').innerHTML= t + "s后跳转到用户页";  
+      if(t==0){  
+          location.href='profile.html';  
+      }  
+      //每秒执行一次,showTime()  
+      setTimeout("showTime()",1000);  
+  }  
+  //执行showTime()  
+  showTime();  
+  </script>
+</html>
